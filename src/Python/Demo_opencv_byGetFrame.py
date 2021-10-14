@@ -6,6 +6,12 @@ Created on 2017-10-25
 @author: 
 '''
 
+import os
+print('Current Directory:', os.path.abspath(os.getcwd()))
+print('file Directory:', os.path.dirname(os.path.abspath(__file__)))
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+print('Change Current Directory To:', os.path.abspath(os.getcwd()))
+
 from ImageConvert import *
 from MVSDK import *
 import struct
