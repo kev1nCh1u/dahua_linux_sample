@@ -6,6 +6,7 @@ Created on 2017-10-25
 @author: 
 '''
 
+# kevin change path
 import os
 print('Current Directory:', os.path.abspath(os.getcwd()))
 print('file Directory:', os.path.dirname(os.path.abspath(__file__)))
